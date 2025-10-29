@@ -1,0 +1,64 @@
+/* ✅ Import animation CSS first */
+@import "./styles/animations.css";
+
+/* ✅ Tailwind layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===============================
+   🌈 GLOBAL STYLES
+   =============================== */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1e293b;
+  background-color: #ffffff;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #1e293b;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Headings */
+h1 {
+  font-size: 3.2em;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Links */
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  color: #1d4ed8;
+}
+
+/* Buttons */
+button {
+  border-radius: 0.75rem;
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #2563eb;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+button:active {
+  transform: translateY(0);
+}
